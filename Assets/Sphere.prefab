@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 306674294560248129}
   - component: {fileID: 498391445040471818}
   - component: {fileID: 734104654947339665}
-  - component: {fileID: 2234934835039458085}
+  - component: {fileID: 3692147784601940073}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Untagged
@@ -61,7 +61,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 8de7232de7004124e8d12e4fa8517744, type: 2}
+  - {fileID: 2100000, guid: 055e41d86bed902468fc6becda386b9a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -109,7 +109,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!135 &734104654947339665
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -123,7 +123,7 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.60456264
   m_Center: {x: -0.0040946756, y: 0, z: 0.041546423}
---- !u!114 &2234934835039458085
+--- !u!114 &3692147784601940073
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -132,6 +132,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 3418136057325125084}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a1eb0aa998fba34d9a65a318db7c377, type: 3}
+  m_Script: {fileID: 11500000, guid: ad8d5421101de0f42a52e414998cb2a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class PistolaScript : MonoBehaviour
 {
     [SerializeField] Transform punta;
-    public float distancia = 10f;
+    public float distancia = 20f;
     [SerializeField] GameObject bala;
     [SerializeField] Image img;
     // Start is called before the first frame update
@@ -18,13 +18,13 @@ public class PistolaScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Vector3 direccion = Quaternion.AngleAxis(-88f, punta.up) * punta.forward;
+        Vector3 direccion = Quaternion.AngleAxis(-88f, -punta.right) * punta.forward;
 
         if (Input.GetMouseButtonDown(0))
         {
             Debug.Log("hola");
             GameObject disparo = Instantiate(bala, punta.position, punta.rotation);
-            disparo.GetComponent<Rigidbody>().AddForce(direccion * 2500);
+            disparo.GetComponent<Rigidbody>().AddForce(direccion * 1500);
         }
 
         if (punta == null) return;
